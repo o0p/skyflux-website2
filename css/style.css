@@ -47,7 +47,8 @@ img {
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
-  height: 70px; 
+  height: 70px;
+  ; 
 }
 
 .navbar ul {
@@ -191,4 +192,66 @@ img {
 /* Footer */
 .footer .social a {
   margin: 0 10px;
+}
+
+/* Tablets and under */
+@media(max-width: 768px) {
+  .grid,
+  .showcase .grid,
+  .stats.grid,
+  .cli .grid,
+  .cloud .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  .showcase {
+    height: auto;
+  }
+  .showcase-text{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+
+}
+
+
+/* Mobile */
+@media(max-width:500px) {
+  .navbar {
+    position: top;
+  }
+
+  .navbar {
+    height: 110px;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  
+  .navbar li {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    margin: 0 7px;
+    border: 1px solid rgba(0, 34, 64, 0.1);
+    transition: transform 150ms ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 900;
+  }
+
+  .navbar li:active {
+    transform: scale(.8);
+  }
 }
