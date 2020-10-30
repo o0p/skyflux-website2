@@ -250,6 +250,9 @@ img {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     font-weight: 900;
   }
+  .navbar a:hover {
+    border-bottom: none;
+  }
 
   .navbar li:active {
     transform: scale(.8);
