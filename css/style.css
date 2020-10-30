@@ -43,6 +43,7 @@ img {
   width: 100%;
 }
 
+/* Navbar */
 .navbar {
   background-color: var(--primary-color);
   color: #fff;
@@ -58,7 +59,7 @@ img {
   padding: 10px;
   margin: 0 5px;
 }
-
+ 
 .navbar a:hover {
   border-bottom: 2px #fff solid;
 }
@@ -67,6 +68,39 @@ img {
   justify-content: space-between;
 }
 
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcaseq p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+/* Utilities */
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -74,9 +108,27 @@ img {
   padding: 0 40px;
 }
 
+.card {
+  background-color: #fdfdfb;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  color: #333;
+}
+
 
 .flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   height: 100%;
